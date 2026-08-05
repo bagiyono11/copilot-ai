@@ -352,7 +352,7 @@ export default function Home() {
               </div>
               <div className="token-card" style={{ borderColor: 'var(--border-dark)' }}>
                 <span>Supply</span>
-                <strong>100T</strong>
+                <strong>1B</strong>
               </div>
             </div>
           </div>

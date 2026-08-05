@@ -62,7 +62,7 @@ export default function Token() {
               </div>
               <div className="token-card">
                 <span>Supply</span>
-                <strong>100T</strong>
+                <strong>1B</strong>
               </div>
             </div>
           </div>
@@ -75,9 +75,9 @@ export default function Token() {
             <h2 className="section-title">Token distribution</h2>
             <div className="ai-grid">
               <div className="ai-card">
-                <div className="ai-card-num">100T</div>
+                <div className="ai-card-num">1B</div>
                 <h3>Total Supply</h3>
-                <p>100,000,000,000,000 CPAI tokens minted at launch.</p>
+                <p>1,000,000,000 CPAI tokens minted at launch.</p>
               </div>
 
             </div>
