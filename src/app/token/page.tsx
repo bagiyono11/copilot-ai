@@ -12,6 +12,7 @@ export default function Token() {
         <nav className="site-nav">
           <a href="/product">Product</a>
           <a href="/token">Token</a>
+          <a href="/agents">Agents</a>
           <a href="/docs">Docs</a>
         </nav>
         <div className="header-actions">
@@ -29,7 +30,8 @@ export default function Token() {
       <nav className="mobile-nav">
         <a href="/product">Product</a>
         <a href="/token">Token</a>
-        <a href="/docs">Docs</a>
+        <a href="/agents">Agents</a>
+          <a href="/docs">Docs</a>
       </nav>
 
       <main>
@@ -208,7 +210,8 @@ export default function Token() {
               <h4>Explore</h4>
               <a href="/product">Product</a>
               <a href="/token">Token</a>
-              <a href="/docs">Docs</a>
+              <a href="/agents">Agents</a>
+          <a href="/docs">Docs</a>
             </div>
             <div className="footer-col">
               <h4>Connect</h4>

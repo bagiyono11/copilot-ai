@@ -24,7 +24,8 @@ export default function Docs() {
       <nav className="mobile-nav">
         <a href="/product">Product</a>
         <a href="/token">Token</a>
-        <a href="/docs">Docs</a>
+        <a href="/agents">Agents</a>
+          <a href="/docs">Docs</a>
       </nav>
 
       <div className="docs-layout">
