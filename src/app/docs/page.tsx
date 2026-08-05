@@ -4,286 +4,166 @@ export default function Docs() {
   return (
     <>
       {/* Header */}
-      <header className="site-header">
-        <a className="site-brand" href="/">
-          <Image src="/logo.jpg" alt="CPAI" width={28} height={28} />
-          <span>COPILOT AI</span>
-          <span style={{ fontSize: 12, color: 'var(--muted)', marginLeft: 4 }}>Docs</span>
+      <header className="docs-header">
+        <a className="docs-brand" href="/">
+          <Image src="/logo.jpg" alt="CPAI" width={24} height={24} />
+          <span>Copilot AI</span>
+          <span className="docs-label">Docs</span>
         </a>
-        <nav className="site-nav">
-          <a href="/product">Product</a>
-          <a href="/token">Token</a>
-          <a href="/docs">Docs</a>
-        </nav>
-        <div className="header-actions">
-          <a className="header-social" href="https://github.com/bagiyono11/copilot-ai" target="_blank" rel="noreferrer">
-            GitHub
-          </a>
+        <div className="docs-search">
+          <input type="text" placeholder="Search documentation..." />
         </div>
+        <a className="docs-github" href="https://github.com/bagiyono11/copilot-ai" target="_blank" rel="noreferrer">
+          GitHub
+        </a>
       </header>
 
-      <main>
-        {/* Hero */}
-        <section className="hero" style={{ paddingBottom: 40 }}>
-          <p className="hero-kicker">DOCUMENTATION</p>
-          <h1>Build with<br />Copilot AI.</h1>
-          <p className="hero-lede">
-            Everything you need to integrate CPAI signals into your trading workflow, agent, or protocol.
+      <div className="docs-layout">
+        {/* Left Sidebar */}
+        <aside className="docs-sidebar">
+          <div className="sidebar-section">
+            <h4>Overview</h4>
+            <a href="/docs" className="active">Introduction</a>
+            <a href="/docs/core-utility">Core Utility</a>
+            <a href="/docs/channels">Delivery Channels</a>
+          </div>
+          <div className="sidebar-section">
+            <h4>AI Layer</h4>
+            <a href="/docs/ai-layer">Overview</a>
+            <a href="/docs/ai-layer/momentum-scanner">1. Momentum Scanner</a>
+            <a href="/docs/ai-layer/liquidity-analyzer">2. Liquidity Analyzer</a>
+            <a href="/docs/ai-layer/risk-scorer">3. Risk Scorer</a>
+            <a href="/docs/ai-layer/entry-optimizer">4. Entry Optimizer</a>
+            <a href="/docs/ai-layer/position-manager">5. Position Manager</a>
+            <a href="/docs/ai-layer/market-context">6. Market Context</a>
+          </div>
+          <div className="sidebar-section">
+            <h4>Utilities</h4>
+            <a href="/docs/utilities/trader">Trader-facing</a>
+            <a href="/docs/utilities/agent">Agent-facing</a>
+            <a href="/docs/utilities/protocol">Protocol-facing</a>
+          </div>
+          <div className="sidebar-section">
+            <h4>Platform</h4>
+            <a href="/docs/architecture">Architecture</a>
+            <a href="/docs/api">API Reference</a>
+            <a href="/docs/integration">Integration</a>
+          </div>
+          <div className="sidebar-section">
+            <h4>Project</h4>
+            <a href="/docs/token">Token Note</a>
+            <a href="/docs/roadmap">Roadmap</a>
+            <a href="/docs/references">References</a>
+          </div>
+        </aside>
+
+        {/* Main Content */}
+        <main className="docs-content">
+          {/* Breadcrumb */}
+          <div className="docs-breadcrumb">
+            <span>Overview</span>
+            <span>›</span>
+            <span className="active">Introduction</span>
+          </div>
+
+          {/* Title */}
+          <h1>Introduction</h1>
+          <p className="docs-summary">
+            An AI-powered trading copilot for Robinhood Chain, helping both humans and autonomous agents make smarter trading decisions with real-time signals and risk analysis.
           </p>
-        </section>
 
-        {/* Quick Start */}
-        <section className="section-dark">
-          <div className="section-inner">
-            <p className="section-kicker">QUICK START</p>
-            <h2 className="section-title">Get started in minutes.</h2>
-            <p className="section-desc" style={{ marginBottom: 32 }}>
-              Follow these steps to start using CPAI signals.
-            </p>
-            <div className="roadmap-grid">
-              <div className="roadmap-card">
-                <div className="roadmap-phase">STEP 1</div>
-                <h3>Connect Wallet</h3>
-                <p>Connect your wallet to Robinhood Chain. Make sure you have ETH for gas.</p>
+          {/* Content */}
+          <div className="docs-body">
+            {/* The Gap */}
+            <section id="the-gap">
+              <h2>The gap</h2>
+              <p>Trading on Robinhood Chain is complex. You&apos;re on your own.</p>
+              <p>That gap is where retail traders get destroyed and where autonomous agents fail silently. Without proper analysis, risk management, or guidance, every day traders lose money because they have no copilot.</p>
+              <div className="docs-callout">
+                <p className="callout-title">CPAI is the missing copilot.</p>
+                <p>The market never sleeps, but you do. CPAI watches the hours you can&apos;t.</p>
               </div>
-              <div className="roadmap-card">
-                <div className="roadmap-phase">STEP 2</div>
-                <h3>Get Signals</h3>
-                <p>Visit the dashboard or use the API to receive real-time trading signals.</p>
+            </section>
+
+            {/* What it scores */}
+            <section id="what-it-scores">
+              <h2>What it scores</h2>
+              <p>CPAI continuously scores the best trading action for a given token <em>right now</em>, combining:</p>
+              <ul>
+                <li>Token fundamentals and contract analysis</li>
+                <li>Market momentum and volume patterns</li>
+                <li>Liquidity depth relative to order size</li>
+                <li>Risk assessment and volatility metrics</li>
+                <li>An AI layer that reads market context and catalysts</li>
+              </ul>
+            </section>
+
+            {/* The verdict */}
+            <section id="the-verdict">
+              <h2>The verdict</h2>
+              <p>The output is a clear signal plus a confidence score, delivered through multiple channels.</p>
+              <div className="docs-badges">
+                <span className="badge buy">BUY</span>
+                <span className="badge hold">HOLD</span>
+                <span className="badge sell">SELL</span>
+                <span className="badge avoid">AVOID</span>
               </div>
-              <div className="roadmap-card">
-                <div className="roadmap-phase">STEP 3</div>
-                <h3>Trade Smarter</h3>
-                <p>Use CPAI signals to make informed trading decisions on Robinhood Chain.</p>
-              </div>
-            </div>
+              <p>A signal is not advice — it is data-driven analysis. The final decision is always yours.</p>
+            </section>
+
+            {/* At a glance */}
+            <section id="at-a-glance">
+              <h2>At a glance</h2>
+              <table className="docs-table">
+                <tbody>
+                  <tr>
+                    <td>Name</td>
+                    <td>Copilot AI</td>
+                  </tr>
+                  <tr>
+                    <td>Ticker</td>
+                    <td><code>$CPAI</code></td>
+                  </tr>
+                  <tr>
+                    <td>Domain</td>
+                    <td><a href="https://copilotai.site">copilotai.site</a></td>
+                  </tr>
+                  <tr>
+                    <td>Chain</td>
+                    <td>Robinhood Chain</td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
           </div>
-        </section>
 
-        {/* API Reference */}
-        <section className="section-darker">
-          <div className="section-inner">
-            <p className="section-kicker">API REFERENCE</p>
-            <h2 className="section-title">Integrate with your tools.</h2>
-            <p className="section-desc" style={{ marginBottom: 32 }}>
-              Use the CPAI API to integrate signals into your trading bot, agent, or protocol.
-            </p>
-            <div className="code-block" style={{ maxWidth: 700, margin: '0 auto' }}>
-              <div className="code-header">
-                <span>MCP / signal.evaluate</span>
-                <span>JSON</span>
-              </div>
-              <div className="code-content">
-                <pre><code>{`{
-  "token": "CPAI",
-  "pair": "CPAI/WETH",
-  "action": "BUY",
-  "confidence": "HIGH",
-  "score": 18,
-  "factors": {
-    "momentum": "strong",
-    "liquidity": "deep",
-    "risk": "low"
-  },
-  "reasons": [
-    "Strong upward momentum detected",
-    "Liquidity depth exceeds order size",
-    "Low volatility environment"
-  ]
-}`}</code></pre>
-              </div>
-            </div>
-          </div>
-        </section>
+          {/* Next Page */}
+          <nav className="docs-nav">
+            <span></span>
+            <a href="/docs/core-utility" className="next">Core Utility →</a>
+          </nav>
+        </main>
 
-        {/* Signal Types */}
-        <section className="section-dark">
-          <div className="section-inner">
-            <p className="section-kicker">SIGNAL TYPES</p>
-            <h2 className="section-title">Understanding signals.</h2>
-            <div className="signal-cards">
-              <div className="signal-card">
-                <span className="signal-card-num">BUY</span>
-                <div>
-                  <h3>Buy Signal</h3>
-                  <p>Strong fundamentals, good entry point, low risk. Recommended action: enter position.</p>
-                </div>
-              </div>
-              <div className="signal-card">
-                <span className="signal-card-num">HOLD</span>
-                <div>
-                  <h3>Hold Signal</h3>
-                  <p>Mixed signals, wait for confirmation. Recommended action: maintain current position.</p>
-                </div>
-              </div>
-              <div className="signal-card">
-                <span className="signal-card-num">SELL</span>
-                <div>
-                  <h3>Sell Signal</h3>
-                  <p>Deteriorating conditions, consider exit. Recommended action: reduce or close position.</p>
-                </div>
-              </div>
-              <div className="signal-card">
-                <span className="signal-card-num">AVOID</span>
-                <div>
-                  <h3>Avoid Signal</h3>
-                  <p>High risk, do not enter. Recommended action: stay out of the market.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Factors */}
-        <section className="section-darker">
-          <div className="section-inner">
-            <p className="section-kicker">FACTORS</p>
-            <h2 className="section-title">What CPAI analyzes.</h2>
-            <div className="ai-grid">
-              <div className="ai-card">
-                <div className="ai-card-num">01</div>
-                <h3>Momentum</h3>
-                <p>Price action, volume patterns, trend strength, and momentum indicators.</p>
-              </div>
-              <div className="ai-card">
-                <div className="ai-card-num">02</div>
-                <h3>Liquidity</h3>
-                <p>Pool depth, order book analysis, and executable liquidity assessment.</p>
-              </div>
-              <div className="ai-card">
-                <div className="ai-card-num">03</div>
-                <h3>Risk</h3>
-                <p>Volatility, drawdown potential, and risk-adjusted return metrics.</p>
-              </div>
-              <div className="ai-card">
-                <div className="ai-card-num">04</div>
-                <h3>Fundamentals</h3>
-                <p>Token contract analysis, holder distribution, and project credibility.</p>
-              </div>
-              <div className="ai-card">
-                <div className="ai-card-num">05</div>
-                <h3>Market Context</h3>
-                <p>Broader market conditions, correlation analysis, and sector trends.</p>
-              </div>
-              <div className="ai-card">
-                <div className="ai-card-num">06</div>
-                <h3>Catalysts</h3>
-                <p>Upcoming events, news sentiment, and potential market-moving factors.</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Integration Examples */}
-        <section className="section-dark">
-          <div className="section-inner">
-            <p className="section-kicker">INTEGRATION</p>
-            <h2 className="section-title">Use CPAI in your code.</h2>
-            <div className="code-block" style={{ maxWidth: 700, margin: '0 auto' }}>
-              <div className="code-header">
-                <span>JavaScript</span>
-                <span>Example</span>
-              </div>
-              <div className="code-content">
-                <pre><code>{`// Fetch CPAI signal
-const response = await fetch('https://api.copilotai.site/signal');
-const signal = await response.json();
-
-if (signal.action === 'BUY' && signal.confidence === 'HIGH') {
-  // Execute trade
-  console.log('Strong buy signal detected!');
-  console.log('Score:', signal.score);
-  console.log('Factors:', signal.factors);
-}`}</code></pre>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Resources */}
-        <section className="section-darker">
-          <div className="section-inner">
-            <p className="section-kicker">RESOURCES</p>
-            <h2 className="section-title">Learn more.</h2>
-            <div className="delivery-cards">
-              <div className="delivery-card">
-                <div className="delivery-card-icon">📚</div>
-                <h3>Whitepaper</h3>
-                <p>Read the full technical whitepaper and research behind CPAI.</p>
-                <a href="/product">Read more →</a>
-              </div>
-              <div className="delivery-card">
-                <div className="delivery-card-icon">🔗</div>
-                <h3>GitHub</h3>
-                <p>View the open-source code and contribute to the project.</p>
-                <a href="https://github.com/bagiyono11/copilot-ai" target="_blank" rel="noreferrer">View code →</a>
-              </div>
-              <div className="delivery-card">
-                <div className="delivery-card-icon">💬</div>
-                <h3>Community</h3>
-                <p>Join the community on X to discuss and get support.</p>
-                <a href="/product">Learn more →</a>
-              </div>
-              <div className="delivery-card">
-                <div className="delivery-card-icon">📧</div>
-                <h3>Contact</h3>
-                <p>Have questions? Reach out to the team directly.</p>
-                <a href="mailto:support@copilotai.site">Email us →</a>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* CTA */}
-        <section className="section-accent cta-section">
-          <div className="section-inner">
-            <p className="section-kicker" style={{ color: 'rgba(0,0,0,0.6)' }}>BUILD / 2026</p>
-            <h2 className="section-title">Start building with CPAI.</h2>
-            <p className="section-desc" style={{ margin: '0 auto', color: 'rgba(0,0,0,0.7)' }}>
-              Integrate the first AI trading copilot into your workflow today.
-            </p>
-            <div className="cta-actions">
-              <a className="btn-accent" href="/product">
-                Explore Product →
-              </a>
-              <a className="btn-text" href="/token">
-                View Token →
-              </a>
-            </div>
-          </div>
-        </section>
-      </main>
+        {/* Right Sidebar */}
+        <aside className="docs-toc">
+          <h4>On This Page</h4>
+          <ul>
+            <li><a href="#the-gap">The gap</a></li>
+            <li><a href="#what-it-scores">What it scores</a></li>
+            <li><a href="#the-verdict">The verdict</a></li>
+            <li><a href="#at-a-glance">At a glance</a></li>
+          </ul>
+        </aside>
+      </div>
 
       {/* Footer */}
-      <footer className="site-footer">
-        <div className="footer-status">COPILOT STATUS: ONLINE</div>
-        <div className="footer-main">
-          <div className="footer-brand">
-            <a className="footer-brand-logo" href="/">
-              <Image src="/logo.jpg" alt="CPAI" width={28} height={28} />
-              <span>COPILOT AI</span>
-            </a>
-            <p>The first AI trading copilot on Robinhood Chain.</p>
-          </div>
-          <div className="footer-links">
-            <div className="footer-col">
-              <h4>Explore</h4>
-              <a href="/product">Product</a>
-              <a href="/token">Token</a>
-              <a href="/docs">Docs</a>
-            </div>
-            <div className="footer-col">
-              <h4>Connect</h4>
-              <a href="https://x.com/CopilotAI_RH" target="_blank" rel="noreferrer">X</a>
-              <a href="mailto:support@copilotai.site">Email</a>
-            </div>
-          </div>
-        </div>
-        <div className="footer-bottom">
-          <span>© 2026 Copilot AI</span>
-          <span>ROBINHOOD CHAIN</span>
-          <span>TRADE SMARTER. YOUR COPILOT IS HERE.</span>
-        </div>
+      <footer className="docs-footer">
+        <span>Copilot AI ($CPAI) — the first AI trading copilot on Robinhood Chain.</span>
+        <nav>
+          <a href="https://copilotai.site">copilotai.site</a>
+          <a href="https://x.com/CopilotAI_RH" target="_blank" rel="noreferrer">X</a>
+          <a href="https://github.com/bagiyono11/copilot-ai" target="_blank" rel="noreferrer">GitHub</a>
+        </nav>
       </footer>
     </>
   )
