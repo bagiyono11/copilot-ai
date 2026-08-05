@@ -6,7 +6,7 @@ export default function Home() {
       {/* ===== HEADER ===== */}
       <header className="site-header">
         <a className="site-brand" href="/">
-          <Image src="/logo.svg" alt="CPAI" width={28} height={28} />
+          <Image src="/logo.jpg" alt="CPAI" width={28} height={28} />
           <span>COPILOT AI</span>
         </a>
         <nav className="site-nav">
@@ -353,7 +353,7 @@ export default function Home() {
         <div className="footer-main">
           <div className="footer-brand">
             <a className="footer-brand-logo" href="/">
-              <Image src="/logo.svg" alt="CPAI" width={28} height={28} />
+              <Image src="/logo.jpg" alt="CPAI" width={28} height={28} />
               <span>COPILOT AI</span>
             </a>
             <p>The first AI trading copilot on Robinhood Chain. Trade smarter, not harder.</p>
