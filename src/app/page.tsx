@@ -18,8 +18,19 @@ export default function Home() {
           <a className="header-social" href="https://x.com/CopilotAI_RH" target="_blank" rel="noreferrer" aria-label="CPAI on X">
             𝕏
           </a>
+          <label className="hamburger" htmlFor="mobile-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <input type="checkbox" id="mobile-toggle" className="mobile-toggle" />
         </div>
       </header>
+      <nav className="mobile-nav">
+        <a href="/product">Product</a>
+        <a href="/token">Token</a>
+        <a href="/docs">Docs</a>
+      </nav>
 
       <main>
         {/* ===== HERO ===== */}
@@ -267,7 +278,7 @@ export default function Home() {
         </section>
 
         {/* ===== SECTION 06: ROADMAP ===== */}
-        <section className="section-light">
+        <section className="section-light" id="roadmap">
           <div className="section-inner">
             <p className="section-kicker">05 / BUILDING IN THE OPEN</p>
             <h2 className="section-title">AI observes.<br />Policy decides.<br /><em>The copilot acts.</em></h2>
@@ -371,7 +382,7 @@ export default function Home() {
               <h4>Product</h4>
               <a href="/docs">Docs</a>
               <a href="#roadmap">Roadmap</a>
-              <a href="#faq">FAQ</a>
+              <a href="/product#faq">FAQ</a>
             </div>
           </div>
         </div>

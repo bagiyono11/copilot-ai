@@ -1202,3 +1202,150 @@ body {
   .docs-sidebar { display: none; }
   .docs-search { display: none; }
 }
+
+/* ===== SECTION LIGHT ===== */
+.section-light {
+  background: var(--bg-light, #111);
+  color: var(--fg-primary);
+  padding: 100px 32px;
+}
+
+/* ===== CODE BLOCK ===== */
+.code-block {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.code-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  border-bottom: 1px solid var(--border);
+  font-size: 12px;
+  font-family: var(--font-mono);
+  color: var(--muted);
+}
+
+.code-content {
+  padding: 20px;
+  overflow-x: auto;
+}
+
+.code-content pre {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--fg-secondary);
+}
+
+.code-content code {
+  font-family: inherit;
+}
+
+/* ===== FAQ ===== */
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.faq-item {
+  border-bottom: 1px solid var(--border);
+}
+
+.faq-question {
+  padding: 16px 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--fg-primary);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-question::after {
+  content: '+';
+  font-size: 18px;
+  color: var(--muted);
+  font-weight: 400;
+}
+
+.faq-answer {
+  padding: 0 0 16px;
+  font-size: 14px;
+  color: var(--fg-secondary);
+  line-height: 1.6;
+}
+
+/* ===== HAMBURGER MENU ===== */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  padding: 8px;
+  background: none;
+  border: none;
+}
+
+.hamburger span {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: var(--fg-primary);
+  transition: all 0.3s;
+}
+
+.mobile-nav {
+  display: none;
+  position: fixed;
+  top: 52px;
+  left: 0;
+  right: 0;
+  background: var(--bg-primary);
+  border-bottom: 1px solid var(--border);
+  padding: 16px 32px;
+  z-index: 99;
+}
+
+.mobile-nav.open {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.mobile-nav a {
+  color: var(--fg-secondary);
+  text-decoration: none;
+  font-size: 14px;
+  padding: 8px 0;
+  transition: color 0.2s;
+}
+
+.mobile-nav a:hover {
+  color: var(--accent);
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+  
+  .site-nav {
+    display: none !important;
+  }
+}
+
+/* ===== MOBILE TOGGLE ===== */
+.mobile-toggle {
+  display: none;
+}
+
+.mobile-toggle:checked ~ .mobile-nav {
+  display: flex;
+}

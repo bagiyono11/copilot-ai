@@ -14,7 +14,18 @@ export default function Docs() {
           <input type="text" placeholder="Search documentation..." />
         </div>
         <div></div>
+          <label className="hamburger" htmlFor="mobile-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <input type="checkbox" id="mobile-toggle" className="mobile-toggle" />
       </header>
+      <nav className="mobile-nav">
+        <a href="/product">Product</a>
+        <a href="/token">Token</a>
+        <a href="/docs">Docs</a>
+      </nav>
 
       <div className="docs-layout">
         {/* Left Sidebar */}

@@ -18,8 +18,19 @@ export default function Product() {
           <a className="header-social" href="https://x.com/CopilotAI_RH" target="_blank" rel="noreferrer">
             𝕏
           </a>
+          <label className="hamburger" htmlFor="mobile-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <input type="checkbox" id="mobile-toggle" className="mobile-toggle" />
         </div>
       </header>
+      <nav className="mobile-nav">
+        <a href="/product">Product</a>
+        <a href="/token">Token</a>
+        <a href="/docs">Docs</a>
+      </nav>
 
       <main>
         {/* Hero */}
@@ -181,7 +192,7 @@ export default function Product() {
         </section>
 
         {/* FAQ */}
-        <section className="section-darker">
+        <section className="section-darker" id="faq">
           <div className="section-inner">
             <div className="two-col">
               <div>

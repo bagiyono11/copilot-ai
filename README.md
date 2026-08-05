@@ -19,7 +19,6 @@ Analyze tokens. Suggest entries. Manage risk.
 | Symbol | CPAI |
 | Chain | Robinhood Chain (4663) |
 | DEX | Uniswap V2 |
-| Tax | 3% buy/sell |
 
 ## Links
 

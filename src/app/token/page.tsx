@@ -18,8 +18,19 @@ export default function Token() {
           <a className="header-social" href="https://x.com/CopilotAI_RH" target="_blank" rel="noreferrer">
             𝕏
           </a>
+          <label className="hamburger" htmlFor="mobile-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <input type="checkbox" id="mobile-toggle" className="mobile-toggle" />
         </div>
       </header>
+      <nav className="mobile-nav">
+        <a href="/product">Product</a>
+        <a href="/token">Token</a>
+        <a href="/docs">Docs</a>
+      </nav>
 
       <main>
         {/* Hero */}
@@ -50,7 +61,7 @@ export default function Token() {
               </div>
               <div className="token-card">
                 <span>Chain</span>
-                <strong>Robinhood</strong>
+                <strong>Robinhood Chain</strong>
               </div>
               <div className="token-card">
                 <span>DEX</span>
@@ -75,16 +86,7 @@ export default function Token() {
                 <h3>Total Supply</h3>
                 <p>100,000,000,000,000 CPAI tokens minted at launch.</p>
               </div>
-              <div className="ai-card">
-                <div className="ai-card-num">0%</div>
-                <h3>Buy Tax</h3>
-                <p>No tax on buys. Trade freely without hidden fees.</p>
-              </div>
-              <div className="ai-card">
-                <div className="ai-card-num">0%</div>
-                <h3>Sell Tax</h3>
-                <p>No tax on sells. Exit positions without penalties.</p>
-              </div>
+
             </div>
           </div>
         </section>
