@@ -15,4 +15,7 @@ export default function Product() {
           <a href="/docs">Docs</a>
         </nav>
         <div className="header-actions">
-          <a className="header-social" href="https://x.com/CopilotAI_RH" target="_blank" rel="noreferrer">𝕏</a>
+          <a className="header-social" href="https://x.com/CopilotAI_RH" target="_blank" rel="noreferrer">
+            𝕏
+          </a>
+        </div>
