@@ -134,7 +134,7 @@ export default function Product() {
               </div>
               <div className="delivery-card">
                 <div className="delivery-card-icon">📱</div>
-                <h3>Telegram</h3>
+                <h3>Mobile Alerts</h3>
                 <p>Signal alerts, market reports, and instant notifications for active traders.</p>
                 <a href="/docs">See delivery →</a>
               </div>

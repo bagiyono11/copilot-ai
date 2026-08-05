@@ -249,9 +249,9 @@ export default function Home() {
               </div>
               <div className="delivery-card">
                 <div className="delivery-card-icon">📱</div>
-                <h3>Telegram</h3>
-                <p>Immediate signal changes and market alerts for active traders.</p>
-                <a href="/product">See delivery →</a>
+                <h3>Mobile Alerts</h3>
+                <p>Signal alerts, market reports, and instant notifications for active traders.</p>
+                <a href="/docs">See delivery →</a>
               </div>
               <div className="delivery-card">
                 <div className="delivery-card-icon">⚡</div>
