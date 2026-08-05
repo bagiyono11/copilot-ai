@@ -12,6 +12,7 @@ export default function Product() {
         <nav className="site-nav">
           <a href="/product">Product</a>
           <a href="/token">Token</a>
+          <a href="/protocols">Protocols</a>
           <a href="/research">Research</a>
           <a href="/agents">Agents</a>
           <a href="/docs">Docs</a>
@@ -31,7 +32,8 @@ export default function Product() {
       <nav className="mobile-nav">
         <a href="/product">Product</a>
         <a href="/token">Token</a>
-        <a href="/research">Research</a>
+        <a href="/protocols">Protocols</a>
+          <a href="/research">Research</a>
           <a href="/agents">Agents</a>
           <a href="/docs">Docs</a>
       </nav>
@@ -282,7 +284,8 @@ export default function Product() {
               <h4>Explore</h4>
               <a href="/product">Product</a>
               <a href="/token">Token</a>
-              <a href="/research">Research</a>
+              <a href="/protocols">Protocols</a>
+          <a href="/research">Research</a>
           <a href="/agents">Agents</a>
           <a href="/docs">Docs</a>
             </div>

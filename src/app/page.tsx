@@ -12,6 +12,7 @@ export default function Home() {
         <nav className="site-nav">
           <a href="/product">Product</a>
           <a href="/token">Token</a>
+          <a href="/protocols">Protocols</a>
           <a href="/research">Research</a>
           <a href="/agents">Agents</a>
           <a href="/docs">Docs</a>
@@ -31,7 +32,8 @@ export default function Home() {
       <nav className="mobile-nav">
         <a href="/product">Product</a>
         <a href="/token">Token</a>
-        <a href="/research">Research</a>
+        <a href="/protocols">Protocols</a>
+          <a href="/research">Research</a>
           <a href="/agents">Agents</a>
           <a href="/docs">Docs</a>
       </nav>
@@ -375,7 +377,8 @@ export default function Home() {
               <h4>Explore</h4>
               <a href="/product">Product</a>
               <a href="/token">Token</a>
-              <a href="/research">Research</a>
+              <a href="/protocols">Protocols</a>
+          <a href="/research">Research</a>
           <a href="/agents">Agents</a>
           <a href="/docs">Docs</a>
             </div>
@@ -386,7 +389,8 @@ export default function Home() {
             </div>
             <div className="footer-col">
               <h4>Product</h4>
-              <a href="/research">Research</a>
+              <a href="/protocols">Protocols</a>
+          <a href="/research">Research</a>
           <a href="/agents">Agents</a>
           <a href="/docs">Docs</a>
               <a href="#roadmap">Roadmap</a>
