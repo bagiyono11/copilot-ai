@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <>
+    <div>
       {/* Mobile Menu Checkbox */}
       <input type="checkbox" id="mobile-menu-toggle" className="mobile-menu-checkbox" />
       
@@ -421,6 +421,6 @@ export default function Home() {
           <span>TRADE SMARTER. YOUR COPILOT IS HERE.</span>
         </div>
       </footer>
-    </>
+    </div>
   )
 }
