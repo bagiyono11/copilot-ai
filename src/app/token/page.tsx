@@ -56,8 +56,8 @@ export default function Token() {
                 <strong>Uniswap V2</strong>
               </div>
               <div className="token-card">
-                <span>Tax</span>
-                <strong>3%</strong>
+                <span>Supply</span>
+                <strong>100T</strong>
               </div>
             </div>
           </div>
@@ -75,14 +75,14 @@ export default function Token() {
                 <p>100,000,000,000,000 CPAI tokens minted at launch.</p>
               </div>
               <div className="ai-card">
-                <div className="ai-card-num">3%</div>
+                <div className="ai-card-num">0%</div>
                 <h3>Buy Tax</h3>
-                <p>3% tax on buys, distributed to the ecosystem.</p>
+                <p>No tax on buys. Trade freely without hidden fees.</p>
               </div>
               <div className="ai-card">
-                <div className="ai-card-num">3%</div>
+                <div className="ai-card-num">0%</div>
                 <h3>Sell Tax</h3>
-                <p>3% tax on sells, distributed to the ecosystem.</p>
+                <p>No tax on sells. Exit positions without penalties.</p>
               </div>
             </div>
           </div>

@@ -320,8 +320,8 @@ export default function Home() {
                 <strong>Uniswap V2</strong>
               </div>
               <div className="token-card" style={{ borderColor: 'var(--border-dark)' }}>
-                <span>Tax</span>
-                <strong>3%</strong>
+                <span>Supply</span>
+                <strong>100T</strong>
               </div>
             </div>
           </div>
