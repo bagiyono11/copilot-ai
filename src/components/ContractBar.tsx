@@ -2,22 +2,18 @@
 
 import { useState } from 'react'
 
-// PLACEHOLDER - Replace these when launching
-const CONTRACT_ADDRESS = '' // e.g. '0x1234...'
-const UNISWAP_URL = '' // e.g. 'https://app.uniswap.org/swap?chain=robinhoodchain&outputCurrency=0x1234...'
+const CONTRACT_ADDRESS = '0xE687195B9Db00c64B5b2256c849b0F704dEF8E17'
+const UNISWAP_URL = 'https://app.uniswap.org/explore/tokens/robinhood/0xe687195b9db00c64b5b2256c849b0f704def8e17'
 
 export default function ContractBar() {
   const [copied, setCopied] = useState(false)
-  const isReady = CONTRACT_ADDRESS && UNISWAP_URL
 
   const handleCopy = async () => {
-    if (!CONTRACT_ADDRESS) return
     try {
       await navigator.clipboard.writeText(CONTRACT_ADDRESS)
       setCopied(true)
       setTimeout(() => setCopied(false), 1500)
     } catch {
-      // Fallback for older browsers
       const textArea = document.createElement('textarea')
       textArea.value = CONTRACT_ADDRESS
       document.body.appendChild(textArea)
@@ -34,28 +30,23 @@ export default function ContractBar() {
       <div className="contract-label">CONTRACT ADDRESS</div>
       <div className="contract-address-row">
         <div className="contract-address">
-          {isReady ? CONTRACT_ADDRESS : '0x........................................'}
+          {CONTRACT_ADDRESS}
         </div>
         <button 
           className={`contract-copy ${copied ? 'copied' : ''}`}
           onClick={handleCopy}
-          disabled={!isReady}
         >
           {copied ? 'COPIED ✓' : 'COPY'}
         </button>
         <a 
-          className={`contract-trade ${!isReady ? 'disabled' : ''}`}
-          href={isReady ? UNISWAP_URL : undefined}
-          target={isReady ? '_blank' : undefined}
-          rel={isReady ? 'noopener noreferrer' : undefined}
-          onClick={(e) => !isReady && e.preventDefault()}
+          className="contract-trade"
+          href={UNISWAP_URL}
+          target="_blank"
+          rel="noopener noreferrer"
         >
           BUY ON UNISWAP ↗
         </a>
       </div>
-      {!isReady && (
-        <div className="contract-status">COMING SOON</div>
-      )}
     </div>
   )
 }
