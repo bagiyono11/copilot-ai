@@ -18,19 +18,9 @@ export default function Research() {
           <a className="header-social" href="https://x.com/CopilotAI_RH" target="_blank" rel="noreferrer">
             𝕏
           </a>
-          <label className="hamburger" htmlFor="mobile-toggle-research">
-            <span></span>
-            <span></span>
-            <span></span>
-          </label>
-          <input type="checkbox" id="mobile-toggle-research" className="mobile-toggle" />
+          
         </div>
       </header>
-      <nav className="mobile-nav">
-        <a href="/product">Product</a>
-        <a href="/token">Token</a>
-        <a href="/docs">Docs</a>
-      </nav>
 
       <main>
         {/* Hero */}
@@ -217,6 +207,24 @@ export default function Research() {
           </div>
         </section>
       </main>
+      {/* Mobile Menu Overlay */}
+      <div className="mobile-overlay">
+        <div className="mobile-overlay-header">
+          <span className="mobile-overlay-brand">COPILOT AI / MENU</span>
+          <label className="mobile-overlay-close" htmlFor="mobile-menu-toggle">✕</label>
+        </div>
+        <nav className="mobile-overlay-nav">
+          <a href="/">Home</a>
+          <a href="/product">Product</a>
+          <a href="/token">Token</a>
+          <a href="/protocols">Protocols</a>
+          <a href="/research">Research</a>
+          <a href="/agents">Agents</a>
+          <a href="/docs">Docs <span className="nav-arrow">↗</span></a>
+          <a href="https://x.com/CopilotAI_RH" target="_blank" rel="noreferrer">X <span className="nav-arrow">↗</span></a>
+        </nav>
+        <a className="mobile-overlay-cta" href="/product">Try CPAI <span>→</span></a>
+      </div>
 
       {/* Footer */}
       <footer className="site-footer">

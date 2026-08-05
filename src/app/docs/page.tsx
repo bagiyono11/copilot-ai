@@ -14,21 +14,8 @@ export default function Docs() {
           <input type="text" placeholder="Search documentation..." />
         </div>
         <div></div>
-          <label className="hamburger" htmlFor="mobile-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
-          </label>
-          <input type="checkbox" id="mobile-toggle" className="mobile-toggle" />
+          
       </header>
-      <nav className="mobile-nav">
-        <a href="/product">Product</a>
-        <a href="/token">Token</a>
-        <a href="/protocols">Protocols</a>
-          <a href="/research">Research</a>
-          <a href="/agents">Agents</a>
-          <a href="/docs">Docs</a>
-      </nav>
 
       <div className="docs-layout">
         {/* Left Sidebar */}
@@ -155,6 +142,24 @@ export default function Docs() {
             <a href="/docs/core-utility" className="next">Core Utility →</a>
           </nav>
         </main>
+      {/* Mobile Menu Overlay */}
+      <div className="mobile-overlay">
+        <div className="mobile-overlay-header">
+          <span className="mobile-overlay-brand">COPILOT AI / MENU</span>
+          <label className="mobile-overlay-close" htmlFor="mobile-menu-toggle">✕</label>
+        </div>
+        <nav className="mobile-overlay-nav">
+          <a href="/">Home</a>
+          <a href="/product">Product</a>
+          <a href="/token">Token</a>
+          <a href="/protocols">Protocols</a>
+          <a href="/research">Research</a>
+          <a href="/agents">Agents</a>
+          <a href="/docs">Docs <span className="nav-arrow">↗</span></a>
+          <a href="https://x.com/CopilotAI_RH" target="_blank" rel="noreferrer">X <span className="nav-arrow">↗</span></a>
+        </nav>
+        <a className="mobile-overlay-cta" href="/product">Try CPAI <span>→</span></a>
+      </div>
 
         {/* Right Sidebar */}
         <aside className="docs-toc">
