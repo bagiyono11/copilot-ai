@@ -4,11 +4,11 @@ import { useState } from 'react'
 
 // PLACEHOLDER - Replace these when launching
 const CONTRACT_ADDRESS = '' // e.g. '0x1234...'
-const DEXSCREENER_URL = '' // e.g. 'https://dexscreener.com/robinhood/0x1234...'
+const UNISWAP_URL = '' // e.g. 'https://app.uniswap.org/swap?chain=robinhoodchain&outputCurrency=0x1234...'
 
 export default function ContractBar() {
   const [copied, setCopied] = useState(false)
-  const isReady = CONTRACT_ADDRESS && DEXSCREENER_URL
+  const isReady = CONTRACT_ADDRESS && UNISWAP_URL
 
   const handleCopy = async () => {
     if (!CONTRACT_ADDRESS) return
@@ -45,12 +45,12 @@ export default function ContractBar() {
         </button>
         <a 
           className={`contract-trade ${!isReady ? 'disabled' : ''}`}
-          href={isReady ? DEXSCREENER_URL : undefined}
+          href={isReady ? UNISWAP_URL : undefined}
           target={isReady ? '_blank' : undefined}
           rel={isReady ? 'noopener noreferrer' : undefined}
           onClick={(e) => !isReady && e.preventDefault()}
         >
-          TRADE ↗
+          BUY ON UNISWAP ↗
         </a>
       </div>
       {!isReady && (
