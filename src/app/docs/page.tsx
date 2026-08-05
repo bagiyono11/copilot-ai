@@ -13,9 +13,7 @@ export default function Docs() {
         <div className="docs-search">
           <input type="text" placeholder="Search documentation..." />
         </div>
-        <a className="docs-github" href="https://github.com/bagiyono11/copilot-ai" target="_blank" rel="noreferrer">
-          GitHub
-        </a>
+        <div></div>
       </header>
 
       <div className="docs-layout">
