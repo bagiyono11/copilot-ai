@@ -7,16 +7,16 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Copilot AI — Trade smarter with your AI copilot.',
     description: 'The first AI trading copilot on Robinhood Chain.',
-    url: 'https://cpai.xyz',
+    url: 'https://copilotai.site',
     siteName: 'Copilot AI',
-    images: [{ url: 'https://cpai.xyz/og.png', width: 1200, height: 630 }],
+    images: [{ url: 'https://copilotai.site/og.png', width: 1200, height: 630 }],
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Copilot AI — Trade smarter with your AI copilot.',
     description: 'The first AI trading copilot on Robinhood Chain.',
-    images: ['https://cpai.xyz/og.png'],
+    images: ['https://copilotai.site/og.png'],
   },
   icons: { icon: '/favicon.svg' },
 }

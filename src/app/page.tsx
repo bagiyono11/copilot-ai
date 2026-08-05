@@ -255,6 +255,7 @@ export default function Home() {
             <div>
               <span>Connect</span>
               <a href="https://x.com/CopilotAI_RH" target="_blank" rel="noreferrer">X</a>
+              <a href="mailto:support@copilotai.site">Email</a>
             </div>
           </div>
         </div>
