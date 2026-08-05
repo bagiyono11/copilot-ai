@@ -8,6 +8,7 @@ export default function Docs() {
         <a className="site-brand" href="/">
           <Image src="/logo.jpg" alt="CPAI" width={28} height={28} />
           <span>COPILOT AI</span>
+          <span style={{ fontSize: 12, color: 'var(--muted)', marginLeft: 4 }}>Docs</span>
         </a>
         <nav className="site-nav">
           <a href="/product">Product</a>
@@ -15,8 +16,8 @@ export default function Docs() {
           <a href="/docs">Docs</a>
         </nav>
         <div className="header-actions">
-          <a className="header-social" href="https://x.com/CopilotAI_RH" target="_blank" rel="noreferrer">
-            𝕏
+          <a className="header-social" href="https://github.com/bagiyono11/copilot-ai" target="_blank" rel="noreferrer">
+            GitHub
           </a>
         </div>
       </header>
