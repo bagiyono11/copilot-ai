@@ -18,9 +18,6 @@ export default function Home() {
           <a className="header-social" href="https://x.com/CopilotAI_RH" target="_blank" rel="noreferrer" aria-label="CPAI on X">
             𝕏
           </a>
-          <a className="btn-header" href="https://x.com/CopilotAI_RH" target="_blank" rel="noreferrer">
-            Follow ↗
-          </a>
         </div>
       </header>
 
