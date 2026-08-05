@@ -4,6 +4,9 @@ import Image from 'next/image'
 export default function Home() {
   return (
     <>
+      {/* Mobile Menu Checkbox */}
+      <input type="checkbox" id="mobile-menu-toggle" className="mobile-menu-checkbox" />
+      
       {/* ===== HEADER ===== */}
       <header className="site-header">
         <a className="site-brand" href="/">
@@ -22,9 +25,32 @@ export default function Home() {
           <a className="header-social" href="https://x.com/CopilotAI_RH" target="_blank" rel="noreferrer" aria-label="CPAI on X">
             𝕏
           </a>
-          
+          <label className="mobile-menu-btn" htmlFor="mobile-menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
         </div>
       </header>
+
+      {/* Mobile Menu Overlay */}
+      <div className="mobile-overlay">
+        <div className="mobile-overlay-header">
+          <span className="mobile-overlay-brand">COPILOT AI / MENU</span>
+          <label className="mobile-overlay-close" htmlFor="mobile-menu-toggle">✕</label>
+        </div>
+        <nav className="mobile-overlay-nav">
+          <a href="/">Home</a>
+          <a href="/product">Product</a>
+          <a href="/token">Token</a>
+          <a href="/protocols">Protocols</a>
+          <a href="/research">Research</a>
+          <a href="/agents">Agents</a>
+          <a href="/docs">Docs <span className="nav-arrow">↗</span></a>
+          <a href="https://x.com/CopilotAI_RH" target="_blank" rel="noreferrer">X <span className="nav-arrow">↗</span></a>
+        </nav>
+        <a className="mobile-overlay-cta" href="/product">Try CPAI <span>→</span></a>
+      </div>
 
       <main>
         {/* ===== HERO ===== */}
@@ -351,24 +377,6 @@ export default function Home() {
           </div>
         </section>
       </main>
-      {/* Mobile Menu Overlay */}
-      <div className="mobile-overlay">
-        <div className="mobile-overlay-header">
-          <span className="mobile-overlay-brand">COPILOT AI / MENU</span>
-          <label className="mobile-overlay-close" htmlFor="mobile-menu-toggle">✕</label>
-        </div>
-        <nav className="mobile-overlay-nav">
-          <a href="/">Home</a>
-          <a href="/product">Product</a>
-          <a href="/token">Token</a>
-          <a href="/protocols">Protocols</a>
-          <a href="/research">Research</a>
-          <a href="/agents">Agents</a>
-          <a href="/docs">Docs <span className="nav-arrow">↗</span></a>
-          <a href="https://x.com/CopilotAI_RH" target="_blank" rel="noreferrer">X <span className="nav-arrow">↗</span></a>
-        </nav>
-        <a className="mobile-overlay-cta" href="/product">Try CPAI <span>→</span></a>
-      </div>
 
       {/* ===== FOOTER ===== */}
       <footer className="site-footer">
@@ -387,9 +395,9 @@ export default function Home() {
               <a href="/product">Product</a>
               <a href="/token">Token</a>
               <a href="/protocols">Protocols</a>
-          <a href="/research">Research</a>
-          <a href="/agents">Agents</a>
-          <a href="/docs">Docs</a>
+              <a href="/research">Research</a>
+              <a href="/agents">Agents</a>
+              <a href="/docs">Docs</a>
             </div>
             <div className="footer-col">
               <h4>Connect</h4>
@@ -399,9 +407,9 @@ export default function Home() {
             <div className="footer-col">
               <h4>Product</h4>
               <a href="/protocols">Protocols</a>
-          <a href="/research">Research</a>
-          <a href="/agents">Agents</a>
-          <a href="/docs">Docs</a>
+              <a href="/research">Research</a>
+              <a href="/agents">Agents</a>
+              <a href="/docs">Docs</a>
               <a href="#roadmap">Roadmap</a>
               <a href="/product#faq">FAQ</a>
             </div>

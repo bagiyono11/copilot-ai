@@ -2599,3 +2599,139 @@ body {
     text-align: center;
   }
 }
+
+/* ===== POLISH: Global Improvements ===== */
+
+/* Better section spacing */
+.section-dark,
+.section-light {
+  padding: 100px 32px;
+}
+
+/* Improved hero */
+.hero {
+  padding: 120px 32px 80px;
+}
+
+.hero-kicker {
+  font-size: 13px;
+  letter-spacing: 0.2em;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 72px;
+  line-height: 1.0;
+  margin-bottom: 24px;
+}
+
+.hero-lede {
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 40px;
+}
+
+/* Better terminal widget */
+.terminal-widget {
+  background: #0a0a0a;
+  border: 1px solid #1a1a1a;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.5);
+}
+
+/* Improved kicker */
+.section-kicker {
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  margin-bottom: 16px;
+}
+
+/* Better section titles */
+.section-title {
+  font-size: 44px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+/* Improved signal cards */
+.signal-card {
+  padding: 24px;
+  background: #111;
+  border: 1px solid #222;
+  transition: border-color 0.3s, transform 0.3s;
+}
+
+.signal-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+/* Better verdict cards */
+.verdict-card {
+  padding: 28px;
+  transition: transform 0.3s;
+}
+
+.verdict-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Improved delivery cards */
+.delivery-card {
+  padding: 28px;
+  background: #111;
+  border: 1px solid #222;
+  transition: all 0.3s;
+}
+
+.delivery-card:hover {
+  border-color: var(--accent);
+  box-shadow: 0 0 20px rgba(0, 255, 136, 0.1);
+}
+
+/* Better roadmap cards */
+.roadmap-card {
+  padding: 32px;
+  background: #111;
+  border: 1px solid #222;
+}
+
+/* Improved footer */
+.site-footer {
+  padding: 48px 32px;
+}
+
+.footer-brand p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Better ticker bar */
+.ticker-bar {
+  font-size: 12px;
+  letter-spacing: 0.15em;
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+  .hero {
+    padding: 80px 24px 60px;
+  }
+  
+  .hero h1 {
+    font-size: 40px;
+  }
+  
+  .hero-lede {
+    font-size: 16px;
+  }
+  
+  .section-dark,
+  .section-light {
+    padding: 60px 24px;
+  }
+  
+  .section-title {
+    font-size: 28px;
+  }
+}
