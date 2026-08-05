@@ -218,8 +218,12 @@ export default function Product() {
               We&apos;re opening the read-only signals first while the engine collects history for responsible calibration.
             </p>
             <div className="cta-actions">
-              <a className="btn-accent" href="https://x.com/CopilotAI_RH" target="_blank" rel="noreferrer">Follow on X ↗</a>
-              <a className="btn-text" href="/docs">Read the docs →</a>
+              <a className="btn-accent" href="/token">
+                View Token →
+              </a>
+              <a className="btn-text" href="/docs">
+                Read the docs →
+              </a>
             </div>
           </div>
         </section>

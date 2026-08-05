@@ -220,7 +220,7 @@ if (signal.action === 'BUY' && signal.confidence === 'HIGH') {
                 <div className="delivery-card-icon">💬</div>
                 <h3>Community</h3>
                 <p>Join the community on X to discuss and get support.</p>
-                <a href="https://x.com/CopilotAI_RH" target="_blank" rel="noreferrer">Join →</a>
+                <a href="/product">Learn more →</a>
               </div>
               <div className="delivery-card">
                 <div className="delivery-card-icon">📧</div>
@@ -241,8 +241,12 @@ if (signal.action === 'BUY' && signal.confidence === 'HIGH') {
               Integrate the first AI trading copilot into your workflow today.
             </p>
             <div className="cta-actions">
-              <a className="btn-accent" href="https://x.com/CopilotAI_RH" target="_blank" rel="noreferrer">Follow on X ↗</a>
-              <a className="btn-text" href="/product">Explore product →</a>
+              <a className="btn-accent" href="/product">
+                Explore Product →
+              </a>
+              <a className="btn-text" href="/token">
+                View Token →
+              </a>
             </div>
           </div>
         </section>

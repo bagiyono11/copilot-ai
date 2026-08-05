@@ -36,8 +36,8 @@ export default function Home() {
             CPAI analyzes tokens, suggests optimal entries, and manages risk—so you don&apos;t have to trade alone on Robinhood Chain.
           </p>
           <div className="hero-actions">
-            <a className="btn-primary" href="https://x.com/CopilotAI_RH" target="_blank" rel="noreferrer">
-              Follow on X ↗
+            <a className="btn-primary" href="/product">
+              Explore Product →
             </a>
             <a className="btn-secondary" href="#signals">
               Explore the engine ↓
@@ -336,11 +336,11 @@ export default function Home() {
               We&apos;re opening the read-only signals first while the engine collects the history needed for responsible calibration.
             </p>
             <div className="cta-actions">
-              <a className="btn-accent" href="https://x.com/CopilotAI_RH" target="_blank" rel="noreferrer">
-                Follow on X ↗
+              <a className="btn-accent" href="/token">
+                View Token →
               </a>
-              <a className="btn-text" href="https://copilotai.site">
-                Read the research →
+              <a className="btn-text" href="/docs">
+                Read the docs →
               </a>
             </div>
           </div>

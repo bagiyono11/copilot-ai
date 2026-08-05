@@ -178,8 +178,12 @@ export default function Token() {
               Be part of the first AI trading copilot on Robinhood Chain.
             </p>
             <div className="cta-actions">
-              <a className="btn-accent" href="https://x.com/CopilotAI_RH" target="_blank" rel="noreferrer">Follow on X ↗</a>
-              <a className="btn-text" href="/product">Learn more →</a>
+              <a className="btn-accent" href="/product">
+                Explore Product →
+              </a>
+              <a className="btn-text" href="/docs">
+                Read the docs →
+              </a>
             </div>
           </div>
         </section>
