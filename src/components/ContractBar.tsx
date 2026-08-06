@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 
-const CONTRACT_ADDRESS = '0xE687195B9Db00c64B5b2256c849b0F704dEF8E17'
+const CONTRACT_ADDRESS = '0x51B89f1FCE1992f11546AA8A4810aE70e65Ac829'
 const UNISWAP_URL = 'https://app.uniswap.org/explore/tokens/robinhood/0xe687195b9db00c64b5b2256c849b0f704def8e17'
 
 export default function ContractBar() {

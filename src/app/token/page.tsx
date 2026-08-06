@@ -154,7 +154,7 @@ export default function Token() {
                 <span>Robinhood Chain</span>
               </div>
               <div className="code-content">
-                <pre><code>0xE687195B9Db00c64B5b2256c849b0F704dEF8E17</code></pre>
+                <pre><code>0x51B89f1FCE1992f11546AA8A4810aE70e65Ac829</code></pre>
               </div>
             </div>
             <div style={{ marginTop: 24 }}>
